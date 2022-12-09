@@ -31,6 +31,6 @@ sort(vetor)
 depois3 = time.time()
 total3 = (depois3 - antes3)*1000
 
-totalf = (total1 + total2 + total3 / 3)
+totalf = ((total1 + total2 + total3) / 3)
 
 print ("A ordenação demorou %0.2f ms" % totalf)

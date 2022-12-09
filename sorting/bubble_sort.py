@@ -21,10 +21,21 @@ random.shuffle(vetor)
 
 print(vetor)
 
-antes = time.time()
+antes1 = time.time()
 sort(vetor)
-depois = time.time()
+depois1 = time.time()
+total1 = (depois1 - antes1)*1000
+random.shuffle(vetor)
+antes2 = time.time()
+sort(vetor)
+depois2 = time.time()
+total2 = (depois2 - antes2)*1000
+random.shuffle(vetor)
+antes3 = time.time()
+sort(vetor)
+depois3 = time.time()
+total3 = (depois3 - antes3)*1000
 
-total = (depois - antes)*1000
+totalf = ((total1 + total2 + total3) / 3)
 
-print ("A ordenação demorou %0.2f ms" % total)
+print ("A ordenação demorou %0.2f ms" % totalf)
