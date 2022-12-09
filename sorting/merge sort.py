@@ -1,14 +1,14 @@
 import random
 
-def mergeSort(alist):
+def sort(alist):
     print("Splitting ",alist)
     if len(alist)>1:
         mid = len(alist)//2
         lefthalf = alist[:mid]
         righthalf = alist[mid:]
 
-        mergeSort(lefthalf)
-        mergeSort(righthalf)
+        sort(lefthalf)
+        sort(righthalf)
 
         i=0
         j=0
@@ -35,7 +35,7 @@ def mergeSort(alist):
 
 vetor = list(range(0, 9))
 random.shuffle(vetor)
-mergeSort(vetor)
+sort(vetor)
 print(vetor)
 
 
