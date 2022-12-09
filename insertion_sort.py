@@ -20,7 +20,7 @@ def sort(v):
 vetor = list(range(0, 9999))
 random.shuffle(vetor)
 
-print(vetor)
+#print(vetor)
 
 print("Realizando ordenações...")
 print("")
