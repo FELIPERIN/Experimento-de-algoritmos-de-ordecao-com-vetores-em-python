@@ -1,6 +1,8 @@
 import random
 import time
 
+print('boa noite')
+
 def sort(array):
 
     for final in range(len(array), 0, -1):
